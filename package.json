@@ -1,0 +1,27 @@
+{
+  "name": "ng1-demo",
+  "version": "1.0.0",
+  "description": "AngularJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/huxdan/ng1-demo.git"
+  },
+  "keywords": [
+    "AngularJs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huxdan/ng1-demo/issues"
+  },
+  "homepage": "https://github.com/huxdan/ng1-demo#readme",
+  "dependencies": {
+    "angular": "^1.6.8",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.3.1"
+  }
+}
