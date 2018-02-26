@@ -2,9 +2,10 @@
   "name": "ng1-demo",
   "version": "1.0.0",
   "description": "AngularJs",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server ./src -a localhost -p 8888 -c-1"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,11 @@
   "homepage": "https://github.com/huxdan/ng1-demo#readme",
   "dependencies": {
     "angular": "^1.6.8",
+    "angular-route": "^1.6.9",
     "bootstrap": "^3.3.7",
     "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1"
   }
 }
