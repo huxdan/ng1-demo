@@ -4,11 +4,11 @@ var myApp = angular.module('myApp',[
 
 myApp.config(['$locationProvider', '$routeProvider',
     function ($locationProvider, $routeProvider) {
-        $locationProvider.hashPrefix('!');
-        $routeProvider.
-        when('/Home/dashboard',{
-            templateUrl:'src/home/dashboard/dashboard.html',
+        $locationProvider.html5Mode(true);
+        $routeProvider
+        .when('/home',{
+            templateUrl:'home/dashboard/dashboard.html',
             controller:'dashboardCtrl'
-        })
+        }).otherwise({ redirectTo: '/home/dashoboard' });
     }   
 ]);

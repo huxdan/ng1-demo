@@ -7,20 +7,21 @@
     <base href="/">
     <title>AngularJs Demo</title>
 
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css"> -->
 
     
 </head>
 
 <body  ng-app="myApp">
     <h1>Hello World!</h1>
-    <a href="#/Home/dashboard">click</a>
+    <a href="/home">click</a>
     <div ng-view></div>
     
-    <script src="../node_modules/jquery/dist/jquery.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="../node_modules/angular/angular.min.js"></script>
+    
+    <script src="https://cdn.bootcss.com/angular.js/1.6.9/angular.min.js"></script>
+    <script src="https://cdn.bootcss.com/angular.js/1.6.9/angular-route.min.js"></script>
     <script src="app.js"></script> 
+    <script src="home/dashboard/dashboardCtrl.js"></script>
 </body>
 
 </html>
