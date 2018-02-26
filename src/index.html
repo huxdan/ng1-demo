@@ -14,12 +14,14 @@
 
 <body  ng-app="myApp">
     <h1>Hello World!</h1>
-    <a href="/home">click</a>
-    <div ng-view></div>
+    <a href="#/home">click</a>
+    <div ui-view></div>
+    <div ui-view="status"></div>
     
     
     <script src="https://cdn.bootcss.com/angular.js/1.6.9/angular.min.js"></script>
-    <script src="https://cdn.bootcss.com/angular.js/1.6.9/angular-route.min.js"></script>
+    <!-- <script src="https://cdn.bootcss.com/angular.js/1.6.9/angular-route.min.js"></script> -->
+    <script src="https://cdn.bootcss.com/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
     <script src="app.js"></script> 
     <script src="home/dashboard/dashboardCtrl.js"></script>
 </body>
