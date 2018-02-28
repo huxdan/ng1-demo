@@ -6,16 +6,12 @@ myApp.config(['$locationProvider', '$stateProvider',
         $locationProvider.hashPrefix('');
         $stateProvider
         .state('home',{
-            url:'/',
-            views:{
-                '':{
-                    templateUrl:'home/dashboard/dashboard.html',
-                    controller:'dashboardCtrl'
-                },
-                'status':{
-                    template:'status pages'
-                }
-            }
+            url:'/home',
+            templateUrl:'/home/dashboard/dashboard.html'
+        })
+        .state('about',{
+            url:'/about',
+            template:'THIS IS ABOUT PAGE'
         })
     }   
 ]);
