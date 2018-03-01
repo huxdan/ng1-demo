@@ -8,13 +8,13 @@
     <title>AngularJs Demo</title>
 
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-
+    <link rel="stylesheet" href="app.css">
     
 </head>
 
 <body  ng-app="myApp">
     <div ng-include="'shared/header/header.html'"></div>
-    <div class="container">
+    <div>
         <div ui-view></div>
         <div ui-view="status"></div>
     </div>
