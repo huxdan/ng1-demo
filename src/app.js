@@ -11,7 +11,7 @@ myApp.config(['$locationProvider', '$stateProvider',
     })
     .state('about',{
       url:'/about',
-      template:'THIS IS ABOUT PAGE'
+      templateUrl:'/home/about/about.html'
     })
   }   
 ]);

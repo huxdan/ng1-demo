@@ -1,7 +1,17 @@
 .container{
-    margin-top: 68px;
+    margin-top: 60px;
 }
 .container-fluid{
-    margin-top: 68px;
+    margin-top: 60px;
     padding: 0px
 }
+.list-inline>li{
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+/*footer*/
+.footer{
+    color: white;
+    padding: 10px 20px
+} 
