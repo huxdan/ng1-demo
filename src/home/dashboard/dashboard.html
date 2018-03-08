@@ -39,64 +39,10 @@
     
     <div id="slip-container">
       <ul class="list-inline">
-        <li>
+        <li ng-repeat="item in items">
           <!-- <span>the first item</span> -->
-          <a href="http://baidu.com">
-            <img class="img-rounded" src="http://placehold.it/200x200" alt="" title="这是一个标题或描述">
-          </a>
-        </li>
-        <li>
-          <!-- <span>the second item</span> -->
-          <a href="">
-            <img class="img-rounded" src="http://placehold.it/200x200" alt="" title="这是一个标题或描述">
-          </a>
-        </li>
-        <li>
-          <span></span>
-          <a href="">
-            <img class="img-rounded" src="http://placehold.it/200x200" alt="">
-          </a>
-        </li>
-        <li>
-          <span></span>
-          <a href="">
-              <img class="img-rounded" src="http://placehold.it/200x200" alt="">            
-          </a>
-        </li>
-        <li>
-          <span></span>
-          <a href="">
-            <img class="img-rounded" src="http://placehold.it/200x200" alt="">
-          </a>
-        </li>
-        <li>
-          <span></span>
-          <a href="">
-            <img class="img-rounded" src="http://placehold.it/200x200" alt="">
-          </a>
-        </li>
-        <li>
-          <span></span>
-          <a href="">
-            <img class="img-rounded" src="http://placehold.it/200x200" alt="">
-          </a>
-        </li>
-        <li>
-          <span></span>
-          <a href="">
-              <img class="img-rounded" src="http://placehold.it/200x200" alt="">            
-          </a>
-        </li>
-        <li>
-          <span></span>
-          <a href="">
-              <img class="img-rounded" src="http://placehold.it/200x200" alt="">            
-          </a>
-        </li>
-        <li>
-          <span></span>
-          <a href="">
-              <img class="img-rounded" src="http://placehold.it/200x200" alt="">            
+          <a ng-click="imgClick()">
+            <img class="img-rounded" ng-src="{{item.src}}" alt="" title="这是一个标题或描述">
           </a>
         </li>
       </ul>
