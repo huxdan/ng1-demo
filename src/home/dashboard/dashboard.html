@@ -33,15 +33,15 @@
       <h1><span><i class="fa fa-check"></i></span> THIS IS SOME TEXT</h1>
       
       <P>
-        THIS IS TEXT. THIS IS TEXT. THIS IS TEXT. THIS IS TEXT. THIS IS TEXT. THIS IS TEXT. THIS IS TEXT. why no commit
+        THIS IS TEXT. THIS IS TEXT. THIS IS TEXT. THIS IS TEXT. THIS IS TEXT. THIS IS TEXT. THIS IS TEXT.
       </P>    
     </div>
     
     <div>
       <ul class="list-inline">
-        <li ng-repeat="item in items" ng-click="imgClick()">
+        <li ng-repeat="item in items">
           <!-- <span>the first item</span> -->
-          <a class="post-cover" ng-style="{'background-image':'url({{item.src}})'}" style="width:200px;height:200px;display:inline-block">
+          <a class="post-cover" href="#/tutorial/{{item.id}}" ng-style="{'background-image':'url({{item.src}})'}" style="width:200px;height:200px;display:inline-block">
             <!-- <img class="img-rounded img-hover" ng-src="{{item.src}}" alt="" title="这是一个标题或描述"> -->
             <div class="post-mask">
               <h3 class="post-title">{{item.title}}</h3>
