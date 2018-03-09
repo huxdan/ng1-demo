@@ -37,12 +37,15 @@
       </P>    
     </div>
     
-    <div id="slip-container">
+    <div>
       <ul class="list-inline">
-        <li ng-repeat="item in items">
+        <li ng-repeat="item in items" ng-click="imgClick()">
           <!-- <span>the first item</span> -->
-          <a ng-click="imgClick()">
-            <img class="img-rounded" ng-src="{{item.src}}" alt="" title="这是一个标题或描述">
+          <a class="post-cover" ng-style="{'background-image':'url({{item.src}})'}" style="width:200px;height:200px;display:inline-block">
+            <!-- <img class="img-rounded img-hover" ng-src="{{item.src}}" alt="" title="这是一个标题或描述"> -->
+            <div class="post-mask">
+              <h3 class="post-title">{{item.title}}</h3>
+            </div>
           </a>
         </li>
       </ul>

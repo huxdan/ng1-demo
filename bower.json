@@ -22,7 +22,6 @@
     "jquery": "^3.3.1",
     "bootstrap": "3.3.7",
     "angular-ui-router": "^1.0.15",
-    "font-awesome": "fontawesome#^5.0.8",
-    "sliphover": "^2.0.4"
+    "font-awesome": "fontawesome#^5.0.8"
   }
 }
