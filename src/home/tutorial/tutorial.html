@@ -1,77 +1,23 @@
-<div class="container">
+<div class="container" ng-controller="tutorialCtrl">
     <div class="row">
         <div>THIS IS SOME DETAIL</div>
     </div>
     <div class="row">
         <div class="text-center">    
-            <h1>THIS IS SOME DETAIL</h1>
+            <h2>视频教程</h2>
             <P>
                 THIS IS DETAIL. THIS IS DETAIL. THIS IS DETAIL. THIS IS DETAIL. THIS IS DETAIL. THIS IS DETAIL. THIS IS DETAIL.
             </P>    
-            </div>
+        </div>
             
-            <div>
+        <div class="text-center">
             <ul class="list-inline">
-                <li>
-                <!-- <span>the first item</span> -->
-                <a href="">
-                    <img class="img-rounded" src="http://placehold.it/200x200" alt="">
-                </a>
-                </li>
-                <li>
-                <!-- <span>the second item</span> -->
-                <a href="">
-                    <img class="img-rounded" src="http://placehold.it/200x200" alt="">
-                </a>
-                </li>
-                <li>
-                <span></span>
-                <a href="">
-                    <img class="img-rounded" src="http://placehold.it/200x200" alt="">
-                </a>
-                </li>
-                <li>
-                <span></span>
-                <a href="">
-                    <img class="img-rounded" src="http://placehold.it/200x200" alt="">            
-                </a>
-                </li>
-                <li>
-                <span></span>
-                <a href="">
-                    <img class="img-rounded" src="http://placehold.it/200x200" alt="">
-                </a>
-                </li>
-                <li>
-                <span></span>
-                <a href="">
-                    <img class="img-rounded" src="http://placehold.it/200x200" alt="">
-                </a>
-                </li>
-                <li>
-                <span></span>
-                <a href="">
-                    <img class="img-rounded" src="http://placehold.it/200x200" alt="">
-                </a>
-                </li>
-                <li>
-                <span></span>
-                <a href="">
-                    <img class="img-rounded" src="http://placehold.it/200x200" alt="">            
-                </a>
-                </li>
-                <li>
-                <span></span>
-                <a href="">
-                    <img class="img-rounded" src="http://placehold.it/200x200" alt="">            
-                </a>
-                </li>
-                <li>
-                <span></span>
-                <a href="">
-                    <img class="img-rounded" src="http://placehold.it/200x200" alt="">            
-                </a>
-                </li>
+                <li ng-repeat="video in videos">
+                    <!-- <span>the first item</span> -->
+                    <a href="#/tutorial/{{video.id}}">
+                        <img class="img-rounded" ng-src="{{video.src}}" alt="">
+                    </a>
+                </li>                            
             </ul>
         </div>
     </div> 

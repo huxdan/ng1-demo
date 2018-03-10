@@ -10,6 +10,10 @@ myApp.config(['$locationProvider', '$stateProvider','$urlRouterProvider',
       url:'/home',
       templateUrl:'/home/dashboard/dashboard.html'
     })
+    .state('post',{
+      url:'/post/:id',
+      templateUrl:'/home/post-detail/post-detail.html'
+    })
     .state('tutorial',{
       url:'/tutorial/:id',
       templateUrl:'/home/tutorial-detail/tutorial-detail.html'

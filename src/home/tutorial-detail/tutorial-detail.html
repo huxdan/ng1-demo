@@ -1,12 +1,35 @@
 <div ng-controller="tutorial-detailCtrl">
-    <div class="container">
-    <h3>{{param}}</h3>
-    <div class="text-center">
-        <img src="http://placehold.it/600x400" alt="">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-9 detail-main">
+        <div class="text-center">
+          <img src="http://placehold.it/600x400" alt="">
+          <hr>
+        </div>
+      </div>
+      <div class="col-md-3 detail-aside">
+        <div class="detail-aside-head">
+          <a href="">
+            <img src="http://placehold.it/60x60" class="img-circle" alt="">
+          </a>
+        </div>
+        <div class="detail-aside-content">
+          <p>subscribe</p>
+        </div>
+        <div class="detail-aside-comment">
+          <form action="">
+            <textarea name="" id="" cols="30" rows="4"></textarea>
+          </form>
+          <ul class="list-unstyled">
+            <li>
+              <a href="">
+                <img src="http://placehold.it/50x50" class="img-circle" alt="">
+              </a>
+              <p>comment</p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <hr>
-    <div>
-        <p>SOME TEXT.SOME TEXT.SOME TEXT.SOME TEXT.SOME TEXT.</p>
-    </div>
-    </div>
+  </div>
 </div>

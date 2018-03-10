@@ -41,6 +41,12 @@
     z-index: 0;
 }
 
+.detail-main{
+    border-right: 1px solid #000000;
+}
+.detail-aside-head, .detail-aside-content{
+    border-bottom: 1px solid #000;
+}
 /*footer*/
 .footer{
     color: white;
