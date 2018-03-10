@@ -1,7 +1,7 @@
 
 <div ng-controller="dashboardCtrl">
   <div class="container-fluid">
-    <div id="myCarousel" class="carousel slide">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2500">
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -10,17 +10,17 @@
       <div class="carousel-inner">
         <div class="item active">
           <a ng-click="onClick()">
-            <img src="http://placehold.it/1920x500" alt="">              
+            <img src="../../static/images/carousel/1.jpg" alt="">              
           </a>
         </div>
         <div class="item">
           <a href="#/about">
-            <img src="http://placehold.it/1920x500" alt="">              
+            <img src="../../static/images/carousel/2.jpg"  alt="">              
           </a>
         </div>
         <div class="item">
           <a href="">
-            <img src="http://placehold.it/1920x500" alt="">              
+            <img src="../../static/images/carousel/3.jpg" alt="">              
           </a>
         </div>
       </div>
@@ -30,10 +30,10 @@
 
   <div class="container">
     <div class="text-center">    
-      <h1><span><i class="fa fa-check"></i></span> THIS IS SOME TEXT</h1>
+      <h1><span><i class="fa fa-check"></i></span> 作品 </h1>
       
       <P>
-        THIS IS TEXT. THIS IS TEXT. THIS IS TEXT. THIS IS TEXT. THIS IS TEXT. THIS IS TEXT. THIS IS TEXT.
+        部分个人摄影小作品
       </P>    
     </div>
     
@@ -52,47 +52,17 @@
     </div>
   
     <div class="text-center">
-      <h1>THIS IS SOME TOOLS</h1>
+      <h1>一些修图软件</h1>
       <P> TOOL. TOOL. TOOL. TOOL. TOOL. TOOL. TOOL. TOOL. TOOL. TOOL. TOOL. TOOL.</P>
     </div>
-    <div>
+    <div class="text-center">
       <ul class="list-inline">
-        <li>
+        <li ng-repeat="tool in tools">
           <div>
-            <a href=""><img src="http://placehold.it/150x150" alt="" class="img-circle"></a>
+            <a href=""><img ng-src="{{tool.src}}" alt="" class="img-circle"></a>
           </div>
           <div class="text-center"><span>PS</span></div>
-        </li>
-        <li>
-          <div>
-            <a href=""><img src="http://placehold.it/150x150" alt="" class="img-circle"></a>
-          </div>
-          <div class="text-center"><span>PS</span></div>
-        </li>
-        <li>
-          <div>
-            <a href=""><img src="http://placehold.it/150x150" alt="" class="img-circle"></a>
-          </div>
-          <div class="text-center"><span>PS</span></div>
-        </li>
-        <li>
-          <div>
-            <a href=""><img src="http://placehold.it/150x150" alt="" class="img-circle"></a>
-          </div>
-          <div class="text-center"><span>PS</span></div>
-        </li>
-        <li>
-          <div>
-            <a href=""><img src="http://placehold.it/150x150" alt="" class="img-circle"></a>
-          </div>
-          <div class="text-center"><span>PS</span></div>
-        </li>
-        <li>
-          <div>
-            <a href=""><img src="http://placehold.it/150x150" alt="" class="img-circle"></a>
-          </div>
-          <div class="text-center"><span>PS</span></div>
-        </li>
+        </li>        
       </ul>
     </div>
   </div>
