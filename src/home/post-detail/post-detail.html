@@ -10,7 +10,7 @@
               <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-              <div class="item" ng-class="{'1':'active'}[item.id]" ng-repeat="item in items">
+              <div class="item" ng-class="{'1':'active'}[item.id]" ng-repeat="item in items.details">
                 <a href="#/about">
                   <img ng-src="{{item.src}}" ng-style="{'height':'{{height}}'}" style="margin:auto;width:auto" alt="">              
                 </a>
@@ -18,13 +18,13 @@
             </div>
           </div>
           <!-- <img ng-src="{{items[0].src}}" alt="" style="width:auto;height:80%"> -->
-          <hr>
-          <div class="row">
+         
+          <div class="row" style="padding:4px">
               <div class="col-md-6 text-right" style="border-right:1px solid #000">
-                  zuozhe
+                  {{items.authorName}}
               </div>
               <div class="col-md-6 text-left">
-                  tags
+                  <i class="fa fa-tag"></i> 标签：<span ng-repeat="tag in items.tags"> #{{tag}}  </span>
               </div>
           </div>
         </div>
@@ -32,7 +32,8 @@
       <div class="col-md-3 detail-aside">
         <div class="detail-aside-head">
           <a href="">
-            <img src="http://placehold.it/60x60" class="img-circle" alt="">
+            <img ng-src="{{items.authorAvatar}}" class="img-circle" alt="">
+            <span> {{items.authorName}} </span>
           </a>
         </div>
         <div class="detail-aside-content">

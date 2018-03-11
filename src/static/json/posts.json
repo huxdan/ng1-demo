@@ -2,6 +2,8 @@
     {
       "id": 1,
       "src": "../../static/images/post/1/1-1.jpg",
+      "authorName":"随波",
+      "authorAvatar":"../../static/images/avatar/1.jpg",
       "details":[
         {
           "id":1,
@@ -11,6 +13,13 @@
           "src":"../../static/images/post/1/2.jpg"
         }
       ],
+      "comments":[
+        {
+          "id":1,
+          "content":"好看啊..."
+        }
+      ],
+      "tags":["摄影展","简约"],
       "title":"this is title"        
     },{
       "id": 2,
@@ -24,6 +33,13 @@
           "src":"../../static/images/post/2/2.jpg"
         }
       ],
+      "comments":[
+        {
+          "id":1,
+          "content":"好看啊..."
+        }
+      ],
+      "tags":["摄影展","简约"],
       "title":"this is title" 
     },{
       "id": 3,
@@ -37,6 +53,13 @@
           "src":"../../static/images/post/3/2.jpg"
         }
       ],
+      "comments":[
+        {
+          "id":1,
+          "content":"好看啊..."
+        }
+      ],
+      "tags":["摄影展","简约"],
       "title":"this is title"  
     },{
       "id": 4,
@@ -50,6 +73,13 @@
           "src":"../../static/images/post/4/2.jpg"
         }
       ],
+      "comments":[
+        {
+          "id":1,
+          "content":"好看啊..."
+        }
+      ],
+      "tags":["摄影展","简约"],
       "title":"this is title" 
     },{
       "id": 5,
@@ -60,6 +90,13 @@
           "src":"../../static/images/post/5/1.jpg"
         }
       ],
+      "comments":[
+        {
+          "id":1,
+          "content":"好看啊..."
+        }
+      ],
+      "tags":["摄影展","简约"],
       "title":"this is title"  
     },{
       "id": 6,
@@ -76,6 +113,13 @@
           "src":"../../static/images/post/6/3.jpg"
         }
       ],
+      "comments":[
+        {
+          "id":1,
+          "content":"好看啊..."
+        }
+      ],
+      "tags":["摄影展","简约"],
       "title":"this is title" 
     },{
       "id": 7,
@@ -89,6 +133,13 @@
           "src":"../../static/images/post/7/2.jpg"
         }
       ],
+      "comments":[
+        {
+          "id":1,
+          "content":"好看啊..."
+        }
+      ],
+      "tags":["摄影展","简约"],
       "title":"this is title"  
     },{
       "id": 8,
@@ -102,6 +153,13 @@
           "src":"../../static/images/post/8/2.jpg"
         }
       ],
+      "comments":[
+        {
+          "id":1,
+          "content":"好看啊..."
+        }
+      ],
+      "tags":["摄影展","简约"],
       "title":"this is title" 
     },{
       "id": 9,
@@ -118,6 +176,13 @@
           "src":"../../static/images/post/9/3.jpg"
         }
       ],
+      "comments":[
+        {
+          "id":1,
+          "content":"好看啊..."
+        }
+      ],
+      "tags":["摄影展","简约"],
       "title":"this is title"  
     },{
       "id": 10,
@@ -131,6 +196,13 @@
           "src":"../../static/images/post/10/2.jpg"
         }
       ],
+      "comments":[
+        {
+          "id":1,
+          "content":"好看啊..."
+        }
+      ],
+      "tags":["摄影展","简约"],
       "title":"this is title"  
     }
   ]
