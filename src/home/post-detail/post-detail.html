@@ -1,6 +1,6 @@
 <div ng-controller="post-detailCtrl">
   <div class="container-fluid">
-    <div class="row">
+    <div>
       <div class="col-md-9 detail-main">
         <div class="text-center">
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -37,18 +37,25 @@
           </a>
         </div>
         <div class="detail-aside-content">
-          <p>subscribe</p>
+          <h5>{{items.content}}</h5>
         </div>
         <div class="detail-aside-comment">
-          <form action="">
-            <textarea name="" id="" cols="30" rows="4"></textarea>
+          <br>
+          <form action="" class="text-right">
+            <textarea name="" id="" cols="30" rows="3"></textarea>
           </form>
+          <div class="text-right">
+            <button class="btn btn-primary">评论</button>
+          </div>
+          
           <ul class="list-unstyled">
-            <li>
+            <li ng-repeat="comment in items.comments">
               <a href="">
-                <img src="http://placehold.it/50x50" class="img-circle" alt="">
+                <img src="http://placehold.it/30x30" class="img-circle" alt="">
               </a>
-              <p>comment</p>
+              <div style="padding-left:35px">
+                <span>{{comment.content}}</span>                
+              </div>
             </li>
           </ul>
         </div>

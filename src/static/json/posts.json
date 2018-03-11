@@ -17,10 +17,17 @@
         {
           "id":1,
           "content":"好看啊..."
+        },{
+          "id":2,
+          "content":"好看啊..."
+        },{
+          "id":3,
+          "content":"好看啊..."
         }
       ],
       "tags":["摄影展","简约"],
-      "title":"this is title"        
+      "title":"this is title",
+      "content":"摄影展的角落"        
     },{
       "id": 2,
       "src": "../../static/images/post/2/1-1.jpg",

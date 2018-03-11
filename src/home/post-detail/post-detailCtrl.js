@@ -9,10 +9,8 @@ angular.module('myApp').controller('post-detailCtrl',['$scope','$stateParams','$
       angular.forEach(resp.data,function(data, index, array){
         if(data.id == param){
           $scope.items  = data;
-          console.log($scope.items);
         }
       });
-
     })
     .catch(function(resp){
 
